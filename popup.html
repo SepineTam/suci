@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SHU Course Selection Helper</title>
+  <style>
+    body {
+      font-family: 'Microsoft YaHei', Arial, sans-serif;
+      width: 320px;
+      padding: 16px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-size: 18px;
+      margin: 0;
+      color: #19899F;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      height: 100px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    button {
+      background-color: #19899F;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #0F6F7F;
+    }
+    .status {
+      padding: 8px;
+      border-radius: 4px;
+      background-color: #f5f5f5;
+      min-height: 40px;
+      margin-top: 10px;
+    }
+    .status-title {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .log-entry {
+      font-size: 12px;
+      margin-bottom: 2px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>上大选课助手</h1>
+    </div>
+    
+    <div class="input-group">
+      <label for="course-list">课程列表（每行一个"课程号:教师号"）:</label>
+      <textarea id="course-list" placeholder="例如:&#10;3100RH62:1000&#10;04136076:1000"></textarea>
+    </div>
+    
+    <div class="options">
+      <div class="checkbox-group">
+        <input type="checkbox" id="auto-confirm" checked>
+        <label for="auto-confirm">自动确认选课</label>
+      </div>
+      
+      <div class="checkbox-group">
+        <input type="checkbox" id="continuous-mode">
+        <label for="continuous-mode">持续监控（每隔10秒尝试一次）</label>
+      </div>
+    </div>
+    
+    <button id="start-button">开始选课</button>
+    <button id="stop-button" style="background-color: #d9534f; display: none;">停止选课</button>
+    
+    <div class="status">
+      <div class="status-title">状态信息:</div>
+      <div id="status-log"></div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

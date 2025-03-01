@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#19899F" />
+  
+  <!-- Book or document symbol -->
+  <rect x="34" y="34" width="60" height="60" rx="3" fill="white" />
+  
+  <!-- Lines representing text on a document -->
+  <rect x="42" y="46" width="44" height="4" rx="2" fill="#19899F" />
+  <rect x="42" y="56" width="44" height="4" rx="2" fill="#19899F" />
+  <rect x="42" y="66" width="30" height="4" rx="2" fill="#19899F" />
+  <rect x="42" y="76" width="36" height="4" rx="2" fill="#19899F" />
+  
+  <!-- Checkmark symbol -->
+  <path d="M90,50 L70,70 L60,60" stroke="#FF5722" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
