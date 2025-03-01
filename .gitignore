@@ -1,4 +1,4 @@
-suci.crx
-suci.pem
+src/dist
+src/private
 .vscode
 .idea
