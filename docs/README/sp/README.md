@@ -1,7 +1,7 @@
 # SUCI
 
 <p align="center">
-  <img src="../../../icons.svg" width="128" height="128" alt="Logo de SUCI">
+  <img src="../../../src/img/icons.svg" width="128" height="128" alt="Logo de SUCI">
 </p>
 
 [![en](https://img.shields.io/badge/lang-English-red.svg)](../../../README.md)
