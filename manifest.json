@@ -7,7 +7,7 @@
   "host_permissions": ["*://jwxk.shu.edu.cn/*"],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "img/icons.svg"
+    "default_icon": "src/img/icons.svg"
   },
   "content_scripts": [
     {
@@ -19,6 +19,6 @@
     "service_worker": "background.js"
   },
   "icons": {
-    "128": "img/icons.svg"
+    "128": "src/img/icons.svg"
   }
 }
